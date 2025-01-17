@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RizzMaster
 
-## Getting Started
+RizzMaster is a **Next.js** project developed using **TypeScript** that assists users in crafting appropriate responses for dating apps, text messages, and social media platforms. Leveraging artificial intelligence, it provides customized text suggestions based on user conversations.
 
-First, run the development server:
+## Features
 
+- **AI-Powered Text Suggestions**: Offers suitable responses tailored to user interactions.
+- **Support for Multiple Screenshots**: Allows users to upload combinations of profiles and conversations for more accurate suggestions.
+- **Special Modes**: Includes modes like RIZZ for varied response styles.
+
+## Prerequisites
+
+- **Node.js** version 14 or higher
+- **npm**, **yarn**, or **pnpm** for package management
+
+## Installation and Setup
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/rizzmasterai/rizzmaster.git
+   ```
+
+2. **Navigate to the project directory**:
+   ```bash
+   cd rizzmaster
+   ```
+
+3. **Install dependencies**:
+   ```bash
+   # Using npm
+   npm install
+
+   # Using yarn
+   yarn install
+
+   # Using pnpm
+   pnpm install
+   ```
+
+4. **Configure environment variables**:
+   - Create a `.env` file based on the provided `.env.example`
+   - Adjust the variables as needed
+
+## Development Server
+
+Start the development server:
 ```bash
+# Using npm
 npm run dev
-# or
+
+# Using yarn
 yarn dev
-# or
+
+# Using pnpm
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a production build:
+```bash
+# Using npm
+npm run build
+npm run start
 
-## Learn More
+# Using yarn
+yarn build
+yarn start
 
-To learn more about Next.js, take a look at the following resources:
+# Using pnpm
+pnpm build
+pnpm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+We welcome contributions! To contribute:
 
-## Deploy on Vercel
+1. Fork the repository
+2. Create a new branch for your feature or bug fix
+3. Implement your changes and commit them
+4. Submit a pull request for review
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## Contact
+
+For questions or suggestions, please reach out via email at info@rizzmaster.fun
