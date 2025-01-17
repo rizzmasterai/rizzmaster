@@ -1,0 +1,65 @@
+.wallet-adapter-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-family: "DM Sans", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 24px;
+    border-radius: 4px;
+  }
+  
+  .wallet-adapter-button-trigger {
+    background-color: #512da8;
+  }
+  
+  .wallet-adapter-button:not([disabled]):focus-visible {
+    outline-color: white;
+  }
+  
+  .wallet-adapter-button:not([disabled]):hover {
+    background-color: #1a1f2e;
+  }
+  
+  .wallet-adapter-button[disabled] {
+    background: #404144;
+    color: #999;
+    cursor: not-allowed;
+  }
+  
+  .wallet-adapter-button-trigger:not([disabled]) {
+    background: linear-gradient(to right, #9945FF, #14F195);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .wallet-adapter-button-trigger:not([disabled]):hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+  
+  .wallet-adapter-modal-wrapper {
+    background: #2c2d30;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    position: relative;
+    font-family: "DM Sans", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    flex: 1;
+  }
+  
+  .wallet-adapter-modal-button-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #777;
+    cursor: pointer;
+  }

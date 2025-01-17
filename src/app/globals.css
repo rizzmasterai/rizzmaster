@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-unbounded), system-ui, sans-serif;
+}
+
+/* globals.css */
+.section-hero .slick-arrow {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 10px;
+  z-index: 999;
+  position: absolute;
+  top: 40%;
+}
+
+.section-hero .slick-next {
+  right: -11px;
+}
+
+.section-hero .slick-prev {
+  left: -11px;
+}
+
+.section-hero .slick-initialized .slick-slide {
+  transform: scale(0.6);
+  filter: blur(6px);
+  transition: transform 0.5s ease;
+}
+
+.section-hero .slick-slide.slick-current.slick-active.slick-center {
+  transform: scale(1);
+  filter: blur(0px);
+}
+
+.section-hero .slick-slide.slick-active {
+  transform: scale(0.8);
+}
+
+.hero_slide-item {
+  display: grid !important;
+  max-height: 500px;
+  max-width: 228px;
+}
+
+.hero_slide-item video {
+  border-radius: 24px;
+  height: 500px;
+  object-fit: contain;
+  width: 228px;
+}
+
+@media (max-width: 768px) {
+  .hero_slide-item {
+    max-height: 500px;
+  }
+
+  .hero_slide-item video {
+    height: 500px;
+    width: 100%;
+  }
+}
+
+.slick-list {
+  overflow: visible;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .slider-arrows {
+    display: none !important;
+  }
+
+  .slick-dots {
+    padding: 0px;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+  }
+
+  .slick-dots li button {
+    padding: 0px;
+    font-size: 0px;
+    line-height: 0px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #00FFA3;
+  }
+
+  .slick-dots li.slick-active button {
+    background: #00FFA3;
+  }
+}
+
+.wallet-adapter-button-trigger {
+  background: linear-gradient(126.53deg, #00ffa3 0%, #dc1fff 100%) !important;
+  border-radius: 50px !important;
+}
+
+.wallet-adapter-button-trigger:hover {
+  opacity: 0.9;
+}
+
+.icon-gradient {
+  background: linear-gradient(126.53deg, #00ffa3 0%, #dc1fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 24px;
+  height: 24px;
+}
